@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Teacher Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="appointment-container">
+        <h1>Student-Teacher Appointment</h1>
+        <form id="appointment-form">
+            <label for="student-name">Your Name:</label>
+            <input type="text" id="student-name" name="student-name" required placeholder="Enter your name">
+
+            <label for="appointment-date">Appointment Date:</label>
+            <input type="date" id="appointment-date" name="appointment-date" required>
+
+            <label for="appointment-time">Appointment Time:</label>
+            <input type="time" id="appointment-time" name="appointment-time" required>
+
+            <label for="message">Additional Information:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Add any extra details or questions"></textarea>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+
+        <div id="confirmation-message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
